@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30Praum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="css/artista.css">
+    <link rel="stylesheet" href="css/banners.css">
+    <link rel="stylesheet" href="./css/loja.css">
+</head>
+<body>
+  <header>      
+    <nav class="navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/30praumlogo.png" alt="logo da 30praum" width="50"></a>
+          <h2>Home</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="./img/30praumlogo.png" alt="logo da 30praum" width="70"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">shows</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Artistas
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Matue</a></li>
+                    <li><a class="dropdown-item" href="#">Teto</a></li>
+                    <li><a class="dropdown-item" href="#">Wiu</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+    <main>
+      <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+        <div class="banner-titulo bg-body-secondary py-5">
+          <h2 class="titulo">30praum</h2>
+        </div>
+      </section>
+   
+      <h2 class="titulo text-center my-4">Quem somos</h2>
+      
+      <section class="Artistas container row mx-auto mb-5 ">
+
+        <div class="col-md-4 col-sm-12 my-3">   
+          <div class="card h-100">
+            <img src="./img/tue.webp" class="card-img-top" alt="Uma foto do cantor matue">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Matue</h5>
+              <h6 class="card-title">Quem é Matue?</h6>
+              <p class="card-text">Matheus Brasileiro Aguiar nasceu na cidade de Fortaleza em 11 de outubro de 1993. Foi criado em Hollywood, na Califórnia. Desde criança, a música sempre esteve muito presente em sua vida, tendo crescido numa família musical. Sua avó teve uma influência muito forte em seu crescimento e aprendizado, além de motivá-lo sempre a se expressar através do som.</p>
+              <a href="#" class="btn btn-primary">Conheça as musicas do Matue</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 my-3">
+          <div class="card h-100">
+            <img src="./img/teto.jpg" class="card-img-top" alt="Uma foto do cantor matue">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Teto</h5>
+              <h6 class="card-title">Quem é Teto?</h6>
+              <p class="card-text">Clériton Sávio Santos Silva, o Teto, é um jovem baiano de apenas 21 anos. Nascido em Jacobina, cidade que fica cerca de 300 km distante de Salvador, ele é um dos responsáveis por tornar o trap, gênero musical derivado do hip-hop, um dos mais executados em todo o país. A carreira do cantor começou de uma maneira nada convencional e quebrando barreiras e alguns padrões</p>
+              <a href="#" class="btn btn-primary">Conheça as musicas do Teto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 my-3">
+          <div class="card h-100">
+            <img src="./img/wiu.webp" class="card-img-top" alt="Uma foto do cantor matue">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Wiu</h5>
+              <h6 class="card-title">Quem é Wiu?</h6>
+              <p class="card-text">WIU, nome artístico de Vinicius William Sales de Lima, nasceu em Fortaleza, no Ceará, em 2002. Seu interesse pelo rap e música eletrônica surgiu pela trilha sonora de jogos como GTA e FIFA Street, e na escola, participava de batalhas de rima que o ajudaram a aprimorar seus versos freestyle. Apaixonado por hip-hop desde criança, trocou os videogames pelo programa de produção musical..</p>
+              <a href="#" class="btn btn-primary">Conheça as musicas do Wiu</a>
+            </div>
+        </div>   
+
+      </section>
+        
+      <section class="carrossel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em"></text></svg>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Melhor show de trap do brasil</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></svg>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Melhor show de trap do brasil</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em"></text></svg>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Melhor show de trap do brasil</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <h2 class="titulo text-center my-4">Nossa lojas</h2>
+
+    <section>
+ 
+      <div class="container d-flex flex-column align-items-center justify-content-center gap-3 flex-lg-row flex-sm-row flex-sm-wrap flex-lg-wrap">
+        <div class="card largura__carde">
+          <img src="./img/BERMUDA_VERDE.webp" class="card-img-top" alt="bermuda verde">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card largura__carde">
+          <img src="./img/camisaLaranja.webp" class="card-img-top" alt="camisa matue">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card largura__carde">
+          <img src="./img/camisaPreda.webp" class="card-img-top" alt="camisa cor preta">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card largura__carde">
+          <img src="./img/camisaBranca.webp" class="card-img-top" alt="camisa do teto">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card largura__carde">
+          <img src="./img/camisaVerde.webp" class="card-img-top" alt="camisa verde">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card largura__carde">
+          <img src="./img/vinilAlbum.webp" class="card-img-top" alt="vinil album maquina do tempo">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>  
+  
+    </main>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
