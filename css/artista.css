@@ -2,6 +2,7 @@
     --cor-fundo:  #262626;
     --cor-card:#4d4d4d;
     --cor-letras: #f1f1f1;
+    --font-principal: "Montserrat";
 }
 
 .card {
@@ -17,5 +18,9 @@
     justify-content: center;
 
     background-color: var(--cor-card);
+    color: var(--cor-letras);
+}
+
+.texto{
     color: var(--cor-letras);
 }
