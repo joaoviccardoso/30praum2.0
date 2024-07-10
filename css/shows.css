@@ -1,0 +1,11 @@
+:root{
+    --cor-fundo:  #262626;
+    --cor-card:#4d4d4d;
+    --cor-letras: #f1f1f1;
+    --cor-cart-shows: #000000;
+    --font-principal: "Montserrat";
+}
+
+.shows{
+    background: var(--cor-cart-shows);
+}
