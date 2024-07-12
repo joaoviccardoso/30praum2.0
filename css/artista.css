@@ -2,6 +2,9 @@
     --cor-fundo:  #262626;
     --cor-card:#4d4d4d;
     --cor-letras: #f1f1f1;
+    --cor-nav-bar: #212529;
+    --cor-bordar: #888888:
+    --cor-hover-btn: #cccccc;
     --font-principal: "Montserrat";
 }
 
@@ -25,4 +28,17 @@
     color: var(--cor-letras);
 
     font-family: var(--font-principal);
+}
+
+.btn{
+    border: 1px solid var(--cor-letras);
+    
+    font-family: var(--font-principal);
+}
+
+.btn:hover{
+    border: 1px solid #d9d9d9;
+    background-color: #d9d9d9;
+
+    color: var(--cor-fundo);
 }
