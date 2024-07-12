@@ -6,6 +6,11 @@
     --font-principal: "Montserrat";
 }
 
+a{
+    color: var(--cor-letras);
+}
+
 .footer{
    background-color: var(--cor-nav-bar);
 }
+

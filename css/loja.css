@@ -4,9 +4,15 @@
     --cor-letras: #f1f1f1;
 }
 
+
+
 @media (min-width: 330px) and (max-width: 560px){
     .largura__carde{
         width: 75%;
+    }
+
+    .texto-loja{
+        font-size: 1rem;
     }
 }
 
@@ -14,11 +20,19 @@
     .largura__carde{
         width: 40%;
     }
+
+    .texto-loja{
+        font-size: .8rem;
+    }
 }
 
 @media (min-width: 991px){
     .largura__carde{
         width: 30%;
+    }
+
+    .texto-loja{
+        font-size: 1rem;
     }
 }
 
