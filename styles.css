@@ -5,10 +5,9 @@
     --font-principal: "Montserrat";
 }
 
-body{
-    background-color: var(--cor-fundo);
+.body{
     color: var(--cor-letras);
-
+    background-color: var(--cor-fundo);
     height: 4000px;
 
     font-family: var(--font-principal);
@@ -16,5 +15,17 @@ body{
     font-size: 1rem;
 }
 
+.main{
+    background-color: var(--cor-fundo);
+}
 
-
+[data-bs-theme="light"]{
+    color: black;
+    .navbar-nav, .titulo-nav, .texto, .shows, card-body, .footer, .main{
+    --bs-navbar-active-color: black;
+    --cor-letras: black;
+    --cor-fundo: #f2f2f2;
+    --cor-cart-shows: #888888;
+    --cor-card: #888888;
+    --cor-nav-bar: #f8f9f4
+}}
