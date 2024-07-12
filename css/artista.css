@@ -10,6 +10,8 @@
 
 .card {
     border: 2px solid var(--cor-card);
+
+    box-shadow:2px 3px 5px #888;
 }
 
 .card-body{

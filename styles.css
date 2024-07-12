@@ -6,6 +6,7 @@
     --cor-bordar: #888888:
     --cor-hover-btn: #cccccc;
     --font-principal: "Montserrat";
+    --icone-lista:"bi bi-list"
 }
 
 .body{
@@ -24,7 +25,7 @@
 
 [data-bs-theme="light"]{
     color: black;
-    .navbar-nav, .titulo-nav, .texto, .shows, card-body, .footer, .main{
+    .navbar-nav, .titulo-nav, .texto, .shows, card-body, .footer, .main, .navbar-toggler{
     --bs-navbar-active-color: black;
     --cor-letras: black;
     --cor-fundo: #f2f2f2;
