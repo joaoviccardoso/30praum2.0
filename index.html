@@ -52,10 +52,10 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle titulo-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Artistas
+                    Loja
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark w-50">
-                    <li><a class="dropdown-item titulo-nav" href="#">Matue</a></li>
+                    <li><a class="dropdown-item titulo-nav" href="./html/matue.html">Matue</a></li>
                     <li><a class="dropdown-item titulo-nav" href="#">Teto</a></li>
                     <li><a class="dropdown-item titulo-nav" href="#">Wiu</a></li>
                   </ul>
@@ -77,7 +77,7 @@
       <h2 class="titulo text-center my-4">Quem somos</h2>
       
       <section class="Artistas container row mx-auto mb-5 ">
-
+  
         <div class="col-md-4 col-sm-12 my-3">   
           <div class="card h-100">
             <img src="./img/tue.webp" class="card-img-top" alt="Uma foto do cantor matue">
@@ -85,7 +85,9 @@
               <h5 class="texto card-title fw-bold fs-1">Matue</h5>
               <h6 class="texto card-title fs-5 mt-2">Quem é Matue?</h6>
               <p class="texto card-text mt-2">Matheus Brasileiro Aguiar nasceu na cidade de Fortaleza em 11 de outubro de 1993. Foi criado em Hollywood, na Califórnia. Desde criança, a música sempre esteve muito presente em sua vida, tendo crescido numa família musical. Sua avó teve uma influência muito forte em seu crescimento e aprendizado, além de motivá-lo sempre a se expressar através do som.</p>
-              <a href="#" class="btn btn-danger">Conheça as musicas do Matue</a>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                Conheça quem é o  Matue
+              </button>
             </div>
           </div>
         </div>
@@ -97,7 +99,9 @@
               <h5 class="texto card-title fw-bold fs-1">Teto</h5>
               <h6 class="texto card-title fs-5 mt-2">Quem é Teto?</h6>
               <p class="texto card-text mt-2">Clériton Sávio Santos Silva, o Teto, é um jovem baiano de apenas 21 anos. Nascido em Jacobina, cidade que fica cerca de 300 km distante de Salvador, ele é um dos responsáveis por tornar o trap, gênero musical derivado do hip-hop, um dos mais executados em todo o país. A carreira do cantor começou de uma maneira nada convencional e quebrando barreiras e alguns padrões</p>
-              <a href="#" class="btn btn-danger">Conheça as musicas do Teto</a>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+                Conheça quem é o Teto
+              </button>
             </div>
           </div>
         </div>
@@ -109,8 +113,11 @@
               <h5 class="texto card-title fw-bold fs-1">Wiu</h5>
               <h6 class="texto card-title fs-5 mt-2">Quem é Wiu?</h6>
               <p class="texto card-text mt-2">WIU, nome artístico de Vinicius William Sales de Lima, nasceu em Fortaleza, no Ceará, em 2002. Seu interesse pelo rap e música eletrônica surgiu pela trilha sonora de jogos como GTA e FIFA Street, e na escola, participava de batalhas de rima que o ajudaram a aprimorar seus versos freestyle. Apaixonado por hip-hop desde criança, trocou os videogames pelo programa de produção musical..</p>
-              <a href="#" class="btn btn-danger">Conheça as musicas do Wiu</a>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
+                Conheça quem é o Wiu
+              </button>
             </div>
+          </div>  
         </div>   
 
       </section>
@@ -281,7 +288,7 @@
   
   </main>
 
-  <footer class="footer ">
+  <footer class="footer">
       <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
         <div class="my-3 mx-3">
           <h3 class="texto">Criado por João Victor</h3>
@@ -293,6 +300,63 @@
         </div>
       </div>
   </footer>
+
+  <!--MODAL-1-->
+
+  <div class="modal fade matue" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL-2-->
+
+  <div class="modal fade matue" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--MODAL-3-->
+
+   <div class="modal fade matue" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

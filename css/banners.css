@@ -8,6 +8,10 @@
     background-image: url(../img/banner-1.jpeg);
 }
 
+.banner-2{
+    background-image: url(../img/matue.jpeg);
+}
+
 .banners{
     width: 100%;
     height: 100vh;
