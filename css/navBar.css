@@ -18,3 +18,7 @@
     font-weight: 500;
     font-family: var(--font-principal);
 }
+
+.botaoMudaDeCor{
+    background-color: var(--cor-fundo);
+}
