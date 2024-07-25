@@ -3,7 +3,8 @@
     --cor-card:#4d4d4d;
     --cor-letras: #f1f1f1;
     --cor-nav-bar: #212529;
-    --cor-bordar: #888888:
+    --cor-bordar: #888888;
+    --cor-footer: #111111;
     --font-principal: "Montserrat";
 }
 
@@ -11,7 +12,7 @@ a{
     color: var(--cor-letras);
 }
 
-.footer{
-   background-color: var(--cor-nav-bar);
+.foote{
+   background-color: var(--cor-footer);
 }
 
