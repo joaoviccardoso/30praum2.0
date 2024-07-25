@@ -2,11 +2,95 @@
     --cor-fundo:  #262626;
     --cor-card:#4d4d4d;
     --cor-letras: #f1f1f1;
+    --cor-nav-bar: #212529;
+    --cor-bordar: #888888;
+    --cor-hover: #cccccc;
+    --font-principal: "Montserrat";
 }
 
-.qtd{
-    width: 30%;
+.maisVendidos{
+    width: 80%;
 }
+
+.card_roupas{
+    width: 100%;
+    border: 2px solid var(--cor-card);
+    border-radius: 5px;
+    box-shadow:2px 3px 5px #888;
+}
+
+.descricao{
+    background-color: var(--cor-card);
+}
+
+.card_roupas .pri{
+   display: block;
+   visibility: visible; 
+   opacity: 1;
+}
+
+.card_roupas:hover .pri{
+    display: none;
+    transition: .3s all ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.seg{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position:relative;
+    left: 0;
+    top: 0;
+}
+
+.card_roupas:hover .seg{
+    display: block;
+    transition: .3s all ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+.texto-loja:hover{
+    color: var(--cor-hover);
+}
+
+.maisVendidos{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.container__descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    margin-top: 0.5rem;
+}
+
+.lista{
+    gap: 1rem;
+}
+
+.preco{
+    font-size: 1.1rem;
+    font-family: var(--font-principal);
+}
+
+.pagamentoCartao{
+    font-size: 0.5rem;
+    font-family: var(--font-principal);
+}
+
+.formaDePagamento{
+    font-size: 0.8rem;
+    font-family: var(--font-principal);
+}
+
 
 @media (min-width: 330px) and (max-width: 560px){
     .largura__carde{

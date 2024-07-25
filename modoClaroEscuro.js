@@ -5,8 +5,6 @@ const sol = document.querySelector('.bi-sun');
 const lua = document.querySelector('.bi-moon');
 const imgModoClaroEscuro = document.querySelector('.modoClaroEscuro');
 
-console.log(sol)
-
 modoClaro.addEventListener('click', () =>{
     const modo = modoClaro.checked ? 'light' : 'dark'
     elemento.setAttribute("data-bs-theme", modo)
