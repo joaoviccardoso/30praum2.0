@@ -8,22 +8,20 @@
     --font-principal: "Montserrat";
 }
 
-.maisVendidos{
-    width: 80%;
-}
-
 .card_roupas{
     width: 100%;
     border: 2px solid var(--cor-card);
     border-radius: 5px;
     box-shadow:2px 3px 5px #888;
+    padding: 0.5rem;
+    margin: 0.7rem;
 }
 
 .descricao{
     background-color: var(--cor-card);
 }
 
-.card_roupas .pri{
+.pri{
    display: block;
    visibility: visible; 
    opacity: 1;
@@ -59,9 +57,11 @@
 .maisVendidos{
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 80%;
     overflow-x: scroll;
     overflow-y: hidden;
+    border: 2px solid var(--cor-card);
+    border-radius: 5px;
 }
 
 .container__descricao{
@@ -90,7 +90,6 @@
     font-size: 0.8rem;
     font-family: var(--font-principal);
 }
-
 
 @media (min-width: 330px) and (max-width: 560px){
     .largura__carde{
