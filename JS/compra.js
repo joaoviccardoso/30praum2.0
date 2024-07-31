@@ -1,8 +1,9 @@
 const btns = document.querySelectorAll('.btns');
 const imagem = document.querySelectorAll('.produtos');
+const modal = document.querySelector('.resuldadoDaCompra');
 
 function btnClick(nomeDoProtudo){
-    alert(`${nomeDoProtudo}, foi adicionado no carrinho de compras`)
+   modal.innerHTML = `<p>${nomeDoProtudo}, foi adicionado no carrinho de compras</p>`
 }
 
 for (let i = 0; i < btns.length; i++) {
