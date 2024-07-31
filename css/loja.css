@@ -50,6 +50,10 @@
     opacity: 1;
 }
 
+.texto-loja{
+    font-family: var(--font-principal);
+}
+
 .texto-loja:hover{
     color: var(--cor-hover);
 }
@@ -94,6 +98,10 @@
 
 .qtd{
     width: 50%;
+}
+
+label{
+    font-family: var(--font-principal);
 }
 
 @media (min-width: 330px) and (max-width: 560px){
