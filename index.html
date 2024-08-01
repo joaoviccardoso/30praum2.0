@@ -41,7 +41,7 @@
                   <a class="nav-link active titulo-nav" aria-current="page" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active titulo-nav" aria-current="page" href="./html/aindaNao.html">Carrinho</a>
+                  <a class="nav-link active titulo-nav" aria-current="page" href="./html/aindaNao.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Carrinho</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link titulo-nav" href="./html/aindaNao.html">shows</a>
@@ -365,6 +365,18 @@
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- offcanvas carrinho de compras-->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="resuldadoDaCompra"></p>
     </div>
   </div>
 

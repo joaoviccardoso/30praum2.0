@@ -104,6 +104,16 @@ label{
     font-family: var(--font-principal);
 }
 
+#offcanvasRightLabel{
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+}
+
+.box{
+    border: 2px solid var(--cor-bordar);
+    border-radius: 5px;
+}
+
 @media (min-width: 330px) and (max-width: 560px){
     .largura__carde{
         width: 75%;
