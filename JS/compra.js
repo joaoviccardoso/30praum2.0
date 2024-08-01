@@ -9,7 +9,7 @@ const valorDosProdutos = document.querySelectorAll('.preco');
 
 function btnClick(nomeDoProtudo, qtdEscolhida, tamanhoEscolhida, caminhoDaImg, valorDoProduto){
    nomeModal.innerHTML = `<h1>Adicionado no carrinho</h1>` 
-   modal.innerHTML = `
+   modal.innerHTML += `
     <div class="box d-flex container">
         <img src="${caminhoDaImg}" width="100" height="100"/>
         <div class='container d-flex flex-column  justify-content-center'>
