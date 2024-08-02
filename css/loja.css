@@ -114,6 +114,10 @@ label{
     border-radius: 5px;
 }
 
+.btn__lixeira{
+    width: auto;
+}
+
 @media (min-width: 330px) and (max-width: 560px){
     .largura__carde{
         width: 75%;
