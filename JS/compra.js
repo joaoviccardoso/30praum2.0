@@ -6,8 +6,11 @@ const tamanho = document.querySelectorAll(".tamanho");
 const nomeModal = document.querySelector("#offcanvasRightLabel");
 const valorDosProdutos = document.querySelectorAll(".preco");
 const limpar = document.querySelector('.limparTudo')
+const containerSoma = document.querySelector('.saldoFinal');
 
 const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+let valorfinal = 0
 
 function btnClick(pedidoDecompra) {
   modal.innerHTML += `
@@ -25,6 +28,8 @@ function btnClick(pedidoDecompra) {
 
 limpar.onclick = () =>{
   const seletor = modal.querySelectorAll(".tarefas");
+  valorfinal = 0;
+  containerSoma.innerHTML = `R$0,00`
   for (let i = 0; i < seletor.length; i++) {
     seletor[i].remove()
     localStorage.clear()
@@ -39,7 +44,6 @@ for (let i = 0; i < btns.length; i++) {
   const nomeDoProtudo = imagem[i].getAttribute("alt");
   const caminhoDaImg = imagem[i].getAttribute("src");
   const valorDoProduto = valorDosProdutos[i];
-  console.log(valorDoProduto);
   btns[i].onclick = function criarElemento() {
     const qtdEscolhida = qtd[i].value;
     if (qtdEscolhida == "") {
@@ -62,6 +66,7 @@ for (let i = 0; i < btns.length; i++) {
     carrinho.push(pedidoDecompra);
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
     btnClick(pedidoDecompra)
+    somarCarrinho(pedidoDecompra)
   };
 }
 
@@ -70,3 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
     btnClick(carrinho[i]);
   }
 });
+
+function somarCarrinho(pedidoDecompra){
+  const valor = parseFloat(pedidoDecompra.valor.replace('R$ ', ''));
+  valorfinal += valor
+  containerSoma.innerHTML = `R$${valorfinal.toFixed(2)}`;
+}

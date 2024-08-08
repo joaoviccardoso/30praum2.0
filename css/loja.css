@@ -6,6 +6,8 @@
     --cor-bordar: #888888;
     --cor-hover: #cccccc;
     --font-principal: "Montserrat";
+    --vermerlho-borda: #ff0000;
+    --vermelho-interno: #ff6666;
 }
 
 .card_roupas{
@@ -109,13 +111,34 @@ label{
     font-size: 1.5rem;
 }
 
+.tarefas{
+    width: 95%;
+}
+
 .box{
     border: 2px solid var(--cor-bordar);
     border-radius: 5px;
 }
 
-.btn__lixeira{
-    width: auto;
+.limparTudo{
+    width: 18%;
+    margin-left: 1.2rem;
+
+    border: 2px solid var(--cor-bordar);
+    border-radius: 5px;
+
+    font-family: var(--font-principal);
+}
+
+.limparTudo:hover{
+   border-color: var(--vermerlho-borda);
+   background-color: var(--vermelho-interno);
+}
+
+.saldoTotalContainer{
+    border: 2px solid var(--cor-letras);
+    height: 50px;
+    width: 38%; 
 }
 
 @media (min-width: 330px) and (max-width: 560px){
