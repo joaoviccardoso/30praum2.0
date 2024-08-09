@@ -121,7 +121,8 @@ label{
 }
 
 .limparTudo{
-    width: 18%;
+    width: 22%;
+    height: 1.9rem;
     margin-left: 1.2rem;
 
     border: 2px solid var(--cor-bordar);
@@ -137,8 +138,27 @@ label{
 
 .saldoTotalContainer{
     border: 2px solid var(--cor-letras);
-    height: 50px;
-    width: 38%; 
+    border-radius: 5px;
+    height: 58px;
+    width: 42%;
+    margin-left: 58%;
+    margin-bottom: 1rem;
+}
+
+.saldoFinal{
+    font-size: 2rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.subtotal{
+    font-size: 1rem;
+    font-family: var(--font-principal);
+    font-weight: 300;
+
+    text-align: center;
 }
 
 @media (min-width: 330px) and (max-width: 560px){
@@ -148,6 +168,10 @@ label{
 
     .texto-loja{
         font-size: 1rem;
+    }
+
+    .nav-item{
+        margin: .5rem;
     }
 }
 

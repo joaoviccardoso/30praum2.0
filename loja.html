@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,101 +21,52 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../css/artista.css" />
-    <link rel="stylesheet" href="../css/banners.css" />
-    <link rel="stylesheet" href="../css/loja.css" />
-    <link rel="stylesheet" href="../css/carrosel.css" />
-    <link rel="stylesheet" href="../css/navBar.css" />
-    <link rel="stylesheet" href="../css/shows.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/artista.css" />
+    <link rel="stylesheet" href="./css/banners.css" />
+    <link rel="stylesheet" href="./css/loja.css" />
+    <link rel="stylesheet" href="./css/carrosel.css" />
+    <link rel="stylesheet" href="./css/navBar.css" />
+    <link rel="stylesheet" href="./css/shows.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body data-bs-theme="dark">
-    <header>
+    <header>      
       <nav class="navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="../img/30praumlogo.png" alt="logo da 30praum" width="50"
-          /></a>
-          <h2 class="titulo-nav">LOJA</h2>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span><i class="bi bi-list fs-1"></i></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <img
-                  src="../img/30praumlogo.png"
-                  alt="logo da 30praum"
-                  width="70"
-                />
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active titulo-nav"
-                    aria-current="page"
-                    href="../index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active titulo-nav"
-                    aria-current="page"
-                    href="../html/aindaNao.html"
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
-                    >Carrinho</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link titulo-nav" href="../html/aindaNao.html">shows</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active titulo-nav"
-                    aria-current="page"
-                    href="./html/loja.html"
-                    >Loja</a
-                  >
-                </li>
-                <li
-                  class="modo__claro nav-item form-check form-switch align-self-xl-center"
-                >
-                  <label class="form-check-label" for="modo__claro">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      role="switch"
-                      id="modo__claro" />
-                    <i class="texto bi bi-sun fs-4"></i
-                    ><i class="texto bi bi-moon d-none fs-4"></i
-                  ></label>
-                </li>
-              </ul>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/30praumlogo.png" alt="logo da 30praum" width="50"></a>
+            <h2 class="titulo-nav">Home</h2>
+            <button class="navbar-toggler botaoMudaDeCor" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <img src="./img/list_modo_claro (1).svg" alt="lista" class="modoClaroEscuro">
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="./img/30praumlogo.png" alt="logo da 30praum" width="70"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active titulo-nav" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active titulo-nav" aria-current="page" href="./html/aindaNao.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Carrinho</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link titulo-nav" href="./aindaNao.html">shows</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link active titulo-nav" aria-current="page" href="./loja.html">Loja</a>
+                  </li>  
+                  <li class="modo__claro nav-item form-check form-switch align-self-xl-center">
+                    <label class="form-check-label" for="modo__claro">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo__claro">
+                    <i class="texto bi bi-sun fs-4"></i><i class="texto bi bi-moon d-none fs-4"></i></label>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
       </nav>
     </header>
 
@@ -136,13 +87,13 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/camisaPesadeloBrancoParteTras.webp"
+                  src="./img/camisaPesadeloBrancoParteTras.webp"
                   class="pri produtos"
                   alt="Camisa M4 branco"
                   width="250"
                 />
                 <img
-                  src="../img/logoCamisaM4.webp"
+                  src="./img/logoCamisaM4.webp"
                   class="seg"
                   alt="logo camisa m4 branco"
                   width="250"
@@ -184,13 +135,13 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/camisam4Black.webp"
+                  src="./img/camisam4Black.webp"
                   class="pri produtos"
                   alt="Camisa M4 preta"
                   width="250"
                 />
                 <img
-                  src="../img/logoCamisaM4Black.webp"
+                  src="./img/logoCamisaM4Black.webp"
                   class="seg"
                   alt="logo camisa M4 preta"
                   width="250"
@@ -232,13 +183,13 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/camisaM4Purple.webp"
+                  src="./img/camisaM4Purple.webp"
                   class="pri produtos"
                   alt="Camisa m4 roxa"
                   width="250"
                 />
                 <img
-                  src="../img/logoCamisaM4Purple.webp"
+                  src="./img/logoCamisaM4Purple.webp"
                   class="seg"
                   alt="logo camisa m4 roxa"
                   width="250"
@@ -280,13 +231,13 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/camisam4Preta.webp"
+                  src="./img/camisam4Preta.webp"
                   class="pri produtos"
                   alt="Camisa m4 preta"
                   width="250"
                 />
                 <img
-                  src="../img/logoCamisaM4Preta.webp"
+                  src="./img/logoCamisaM4Preta.webp"
                   class="seg"
                   alt="logo camisa m4 preta"
                   width="250"
@@ -328,13 +279,13 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/camisaPesadeloBranco.webp"
+                  src="./img/camisaPesadeloBranco.webp"
                   class="pri produtos"
                   alt="Camisa pesadelo branca"
                   width="250"
                 />
                 <img
-                  src="../img/camisaPesadeloBrancoParteFrente.webp"
+                  src="./img/camisaPesadeloBrancoParteFrente.webp"
                   class="seg"
                   alt="camisa pesadelo branca parte de tras"
                   width="250"
@@ -376,13 +327,13 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/camisaAmarela.webp"
+                  src="./img/camisaAmarela.webp"
                   class="pri produtos"
                   alt="Camisa cogumelo amarela"
                   width="250"
                 />
                 <img
-                  src="../img/camisaAmarelaFrente.webp"
+                  src="./img/camisaAmarelaFrente.webp"
                   class="seg"
                   alt="camisa amarela parte da frente"
                   width="250"
@@ -424,13 +375,13 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/camisaAzul.webp"
+                  src="./img/camisaAzul.webp"
                   class="pri produtos"
                   alt="Camisa azul"
                   width="250"
                 />
                 <img
-                  src="../img/camisaAzulPartetras.webp"
+                  src="./img/camisaAzulPartetras.webp"
                   class="seg"
                   alt="camisa azul parte de tras "
                   width="250"
@@ -480,14 +431,14 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/calcaMoletonPretaFrente.webp"
+                  src="./img/calcaMoletonPretaFrente.webp"
                   class="pri produtos"
                   alt="Calca moleton preta"
                   width="250"
                   height="300"
                 />
                 <img
-                  src="../img/calcaMoletonPretaTras.webp"
+                  src="./img/calcaMoletonPretaTras.webp"
                   class="seg"
                   alt="calça moleton preta parte de tras"
                   width="250"
@@ -530,14 +481,14 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/calcaMoletonBrancaFrente.webp"
+                  src="./img/calcaMoletonBrancaFrente.webp"
                   class="pri produtos"
                   alt="Calça moleton branca"
                   width="250"
                   height="300"
                 />
                 <img
-                  src="../img/calcaMoletonBrancaTras.webp"
+                  src="./img/calcaMoletonBrancaTras.webp"
                   class="seg"
                   alt="calca moleton branca parte de tras"
                   width="250"
@@ -580,7 +531,7 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/calcaCargaMarron-removebg-preview.png"
+                  src="./img/calcaCargaMarron-removebg-preview.png"
                   class="produtos"
                   alt="Calça cargo marron"
                   width="250"
@@ -623,7 +574,7 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/calcaCargoVerde-removebg-preview.png"
+                  src="./img/calcaCargoVerde-removebg-preview.png"
                   class="produtos"
                   alt="Calça cargo verde"
                   width="250"
@@ -666,7 +617,7 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/calcaCargoPreta-removebg-preview.png"
+                  src="./img/calcaCargoPreta-removebg-preview.png"
                   class="produtos"
                   alt="Calça cargo preta"
                   width="250"
@@ -709,7 +660,7 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/calcaCargoBranca-removebg-preview.png"
+                  src="./img/calcaCargoBranca-removebg-preview.png"
                   class="produtos"
                   alt="Calça cargo branca"
                   width="250"
@@ -783,14 +734,14 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/BERMUDA_VERDE_FRENTE_1000x1000.webp"
+                  src="./img/BERMUDA_VERDE_FRENTE_1000x1000.webp"
                   class="pri produtos"
                   alt="Bermuda verde"
                   width="250"
                   height="300"
                 />
                 <img
-                  src="../img/BERMUDA_VERDE_COSTAS_1000x1000.webp"
+                  src="./img/BERMUDA_VERDE_COSTAS_1000x1000.webp"
                   class="seg"
                   alt="bermuda verde parte de tras"
                   width="250"
@@ -833,14 +784,14 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/bermudaPretaCosta.webp"
+                  src="./img/bermudaPretaCosta.webp"
                   class="pri produtos"
                   alt="Bermuda preta"
                   width="250"
                   height="300"
                 />
                 <img
-                  src="../img/bermudaPretaFrente.webp"
+                  src="./img/bermudaPretaFrente.webp"
                   class="seg"
                   alt="bermuda preta parte da frente"
                   width="250"
@@ -883,7 +834,7 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/bermudaBranca-removebg-preview.png"
+                  src="./img/bermudaBranca-removebg-preview.png"
                   class="produtos"
                   alt="Bermuda branca"
                   width="250"
@@ -926,7 +877,7 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/bermudaPreta-removebg-preview.png"
+                  src="./img/bermudaPreta-removebg-preview.png"
                   class="produtos"
                   alt="Bermuda preta"
                   width="250"
@@ -969,7 +920,7 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/barmudaCargo-removebg-preview.png"
+                  src="./img/barmudaCargo-removebg-preview.png"
                   class="produtos"
                   alt="Bermuda cargo"
                   width="250"
@@ -1012,7 +963,7 @@
             <div class="card_roupas">
               <a href="#">
                 <img
-                  src="../img/bermudaAzul-removebg-preview.png"
+                  src="./img/bermudaAzul-removebg-preview.png"
                   class="produtos"
                   alt="Bermuda azul"
                   width="250"
@@ -1109,7 +1060,8 @@
         
       </div>
       <div class="saldoTotalContainer">
-          <h4 class="saldoFinal"></h4>
+          <h4 class="saldoFinal">R$0,00</h4>
+          <p class="subtotal">Subtotal</p>
       </div>
     </div>
 
@@ -1118,7 +1070,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="../modoClaroEscuro.js"></script>
-    <script src="../JS/compra.js"></script>
+    <script src="./modoClaroEscuro.js"></script>
+    <script src="./JS/compra.js"></script>
   </body>
 </html>
