@@ -143,6 +143,12 @@ label{
     width: 42%;
     margin-left: 58%;
     margin-bottom: 1rem;
+
+    font-size: 2rem;
+    font-family: var(--font-principal);
+    font-weight: 300;
+
+    text-align: center;
 }
 
 .saldoFinal{

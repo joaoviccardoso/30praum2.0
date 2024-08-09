@@ -6,11 +6,11 @@ const tamanho = document.querySelectorAll(".tamanho");
 const nomeModal = document.querySelector("#offcanvasRightLabel");
 const valorDosProdutos = document.querySelectorAll(".preco");
 const limpar = document.querySelector('.limparTudo')
-const containerSoma = document.querySelector('.saldoFinal');
+const containerSoma = document.querySelector('.saldoTotalContainer');
 
 const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-let valorfinal = localStorage.getItem("subtotal") || []
+
 
 function btnClick(pedidoDecompra) {
   modal.innerHTML += `
@@ -28,7 +28,7 @@ function btnClick(pedidoDecompra) {
 
 limpar.onclick = () =>{
   const seletor = modal.querySelectorAll(".tarefas");
-  valorfinal = 0;
+  valorFinal = 0;
   containerSoma.innerHTML = `R$0,00`
   for (let i = 0; i < seletor.length; i++) {
     seletor[i].remove()
@@ -71,14 +71,27 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  mostrarSoma(valorFinal)
   for (let i = 0; i < carrinho.length; i++) {
     btnClick(carrinho[i]);
   }
 });
 
+let valorFinal = parseFloat(localStorage.getItem('valor')) || 0;
+
 function somarCarrinho(pedidoDecompra){
   const valor = parseFloat(pedidoDecompra.valor.replace('R$ ', ''));
-  valorfinal += valor
-  localStorage.setItem("subtotal", valorfinal)
-  containerSoma.innerHTML = `R$${valorfinal.toFixed(2)}`;
+  const qtd = parseFloat(pedidoDecompra.qtd);
+  valorMaisQtd = valor * qtd
+  valorFinal += valorMaisQtd  
+  localStorage.setItem('valor', valorFinal)
+  mostrarSoma(valorFinal)
 }
+
+function mostrarSoma(valorFinal){
+  containerSoma.innerHTML = ` 
+  <h4 class="saldoFinal">R$${valorFinal}</h4>
+  <p class="subtotal">Subtotal</p>
+  `;
+}
+
