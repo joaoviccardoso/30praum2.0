@@ -10,7 +10,7 @@ const containerSoma = document.querySelector('.saldoFinal');
 
 const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-let valorfinal = 0
+let valorfinal = localStorage.getItem("subtotal") || []
 
 function btnClick(pedidoDecompra) {
   modal.innerHTML += `
@@ -79,5 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
 function somarCarrinho(pedidoDecompra){
   const valor = parseFloat(pedidoDecompra.valor.replace('R$ ', ''));
   valorfinal += valor
+  localStorage.setItem("subtotal", valorfinal)
   containerSoma.innerHTML = `R$${valorfinal.toFixed(2)}`;
 }

@@ -29,7 +29,7 @@
     .navbar-nav, .titulo-nav, .texto, .shows, card-body, .footer, .main, .navbar-toggler, .foote{
     --bs-navbar-active-color: black;
     --cor-letras: black;
-    --cor-fundo: #f2f2f2;
+    --cor-fundo: #f2f2f4;
     --cor-cart-shows: #888888;
     --cor-card: #888888;
     --cor-nav-bar: #f8f9f4;
