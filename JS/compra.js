@@ -82,7 +82,7 @@ let valorFinal = parseFloat(localStorage.getItem('valor')) || 0;
 function somarCarrinho(pedidoDecompra){
   const valor = parseFloat(pedidoDecompra.valor.replace('R$ ', ''));
   const qtd = parseFloat(pedidoDecompra.qtd);
-  valorMaisQtd = valor * qtd
+  const valorMaisQtd = valor * qtd
   valorFinal += valorMaisQtd  
   localStorage.setItem('valor', valorFinal)
   mostrarSoma(valorFinal)

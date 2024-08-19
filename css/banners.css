@@ -13,6 +13,11 @@
     margin-bottom: 8rem;
 }
 
+.banner-3{
+    background-image: url(../img/banner-3.jpg);
+    margin-bottom: 8rem; 
+}
+
 .banners{
     width: 100%;
     height: 90vh;
