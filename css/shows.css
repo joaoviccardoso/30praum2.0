@@ -9,3 +9,7 @@
 .shows{
     background: var(--cor-cart-shows);
 }
+
+.localShows{
+    height: 180px;
+}
