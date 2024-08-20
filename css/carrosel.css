@@ -2,6 +2,10 @@
     --cor-fundo:  #262626;
     --cor-card:#4d4d4d;
     --cor-letras: #f1f1f1;
+    --cor-nav-bar: #212529;
+    --cor-bordar: #888888;
+    --cor-hover-btn: #cccccc;
+    --font-principal: "Montserrat";
 }
 
 .img{
@@ -14,4 +18,39 @@
     height: 450px;
 
     margin: 2rem 0;
+}
+
+.carroselShows{
+    width: 30%;   
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imgShow{
+    border: solid var(--cor-fundo) 2px;
+    border-radius: 16px;
+
+    height: 850px;
+}
+
+.cidadesDosShows{
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 330px) and (max-width: 560px){
+    .carroselShows{
+        width: 90%;
+    }
+
+    .imgShow{
+        height: 800px;
+    }
+
+    .cidadesDosShows{
+        width: 90%;
+    }
 }
