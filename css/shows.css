@@ -13,3 +13,24 @@
 .localShows{
     height: 180px;
 }
+
+.listaDeShows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+.cidadesDosShows{
+    width: 500px;
+    height: auto;
+}
+
+@media (min-width: 330px) and (max-width:580px){
+    .cidadesDosShows{
+        width: 300px;
+        height: auto;
+        margin: 0 .5rem;
+    }
+    
+}
