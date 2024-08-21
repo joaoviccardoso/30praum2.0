@@ -21,8 +21,6 @@
 }
 
 .carroselShows{
-    width: 30%;   
-
     margin-right: auto;
     margin-left: auto;
     margin-top: 2rem;
@@ -41,16 +39,48 @@
   height: 100%;
 }
 
-@media (min-width: 330px) and (max-width: 560px){
+
+
+@media (min-width: 330px) and (max-width: 580px){
     .carroselShows{
         width: 90%;
+        display: block;
     }
 
     .imgShow{
-        height: 800px;
+        height: 700px;
     }
 
     .cidadesDosShows{
         width: 90%;
     }
+
+    .shoewDa30praUm{
+        display: none;
+    }
 }
+
+@media (min-width: 581px) and (max-width: 1130px){
+    .carroselShows{
+        display: block;
+        width: 50%;
+    }
+
+    .shoewDa30praUm{
+       display: none;
+    }
+}    
+
+@media (min-width: 1131px){
+    .carroselShows{
+        display: none;
+    }
+
+    .shoewDa30praUm{
+        display: flex;
+        justify-content: space-evenly;
+    
+        margin: 3rem 0 3rem 0 ;
+    }
+}    
+    
