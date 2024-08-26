@@ -10,8 +10,6 @@ const containerSoma = document.querySelector('.saldoTotalContainer');
 
 const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-
-
 function btnClick(pedidoDecompra) {
   modal.innerHTML += `
     <div class="box d-flex container m-2 tarefas">
