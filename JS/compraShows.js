@@ -35,3 +35,9 @@ function criarElementoNoCarrinho(ingresso){
     </div>           
     `
 }
+
+document.addEventListener('DOMContentLoaded', function(){
+    carrinhoShows.forEach(item => {
+        criarElementoNoCarrinho(item)
+    })
+})
