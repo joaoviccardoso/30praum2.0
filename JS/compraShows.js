@@ -2,8 +2,9 @@ const btnsDeCompraDosIngressos = document.querySelectorAll('.btns_shows');
 const cidadesDosShows = document.querySelectorAll('.cidade__show');
 const precosDosIngressos = document.querySelectorAll('.preco__shows');
 const cantoresDosShows = document.querySelectorAll('.cantores');
+const conteinerCarrinho = document.querySelector('.resuldadoDaCompraCarrinhoShows')
 
-const carrinhoShows = [];
+const carrinhoShows = JSON.parse(localStorage.getItem("carrinhoShows")) || [];
 
 btnsDeCompraDosIngressos.forEach(btn => btn.addEventListener('click', btnClick))
 
@@ -19,6 +20,18 @@ function btnClick(){
     }
 
     carrinhoShows.push(ingresso);
-    
-    console.log(carrinhoShows)
+    localStorage.setItem("carrinhoShows", JSON.stringify(carrinhoShows))
+    criarElementoNoCarrinho(ingresso)
+}
+
+function criarElementoNoCarrinho(ingresso){
+    conteinerCarrinho.innerHTML += `
+    <div class="box d-flex container m-2 tarefas">
+        <div class='container d-flex flex-column  justify-content-center'>
+            <p class="texto-loja">${ingresso.cidade}</p>
+            <p class="texto-loja">${ingresso.valor}</p> 
+            <p class="texto-loja">${ingresso.cantores}</p>
+        </div>
+    </div>           
+    `
 }
