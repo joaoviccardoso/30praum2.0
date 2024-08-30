@@ -3,6 +3,7 @@ const cidadesDosShows = document.querySelectorAll('.cidade__show');
 const precosDosIngressos = document.querySelectorAll('.preco__shows');
 const cantoresDosShows = document.querySelectorAll('.cantores');
 const conteinerCarrinho = document.querySelector('.resuldadoDaCompraCarrinhoShows');
+const imgs = document.querySelectorAll('.localShows');
 const btnLimpar = document.querySelector('.limparTudoShows');
 
 const carrinhoShows = JSON.parse(localStorage.getItem("carrinhoShows")) || [];
@@ -14,7 +15,10 @@ function btnClick(){
     const idDoBtn = elementoDoBtnClick.getAttribute('id');
     const numeroDoElemento = idDoBtn.split('-')[1]
 
+    const srcDaImg = imgs[numeroDoElemento].getAttribute('src');
+
     const ingresso = {
+        img: srcDaImg,
         cidade: cidadesDosShows[numeroDoElemento].textContent,
         valor: precosDosIngressos[numeroDoElemento].textContent,
         cantores: cantoresDosShows[numeroDoElemento].textContent
@@ -30,6 +34,7 @@ function btnClick(){
 function criarElementoNoCarrinho(ingresso){
     conteinerCarrinho.innerHTML += `
     <div class="box d-flex container m-2 tarefas">
+        <img src="./${ingresso.img}" width="100" height="100"/>
         <div class='container d-flex flex-column  justify-content-center'>
             <p class="texto-loja">${ingresso.cidade}</p>
             <p class="texto-loja">${ingresso.valor}</p> 
