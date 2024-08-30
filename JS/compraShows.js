@@ -3,6 +3,7 @@ const cidadesDosShows = document.querySelectorAll('.cidade__show');
 const precosDosIngressos = document.querySelectorAll('.preco__shows');
 const cantoresDosShows = document.querySelectorAll('.cantores');
 const conteinerCarrinho = document.querySelector('.resuldadoDaCompraCarrinhoShows');
+const containerSaldoCarrinho = document.querySelector('.saldoTotalContainerShows');
 const imgs = document.querySelectorAll('.localShows');
 const btnLimpar = document.querySelector('.limparTudoShows');
 
@@ -14,6 +15,8 @@ function btnClick(){
     const elementoDoBtnClick = document.getElementById(this.id)
     const idDoBtn = elementoDoBtnClick.getAttribute('id');
     const numeroDoElemento = idDoBtn.split('-')[1]
+    const valueDovalor =  precosDosIngressos[numeroDoElemento].textContent;
+    const valorDoIngresso = parseFloat(valueDovalor.split('R$')[1])
 
     const srcDaImg = imgs[numeroDoElemento].getAttribute('src');
 
@@ -26,7 +29,8 @@ function btnClick(){
 
     carrinhoShows.push(ingresso);
     localStorage.setItem("carrinhoShows", JSON.stringify(carrinhoShows))
-    criarElementoNoCarrinho(ingresso)
+    criarElementoNoCarrinho(ingresso);
+    somarValorDoCarrinhoShow(valorDoIngresso);
 }
 
 //cria os elementos do carrinho de compra
@@ -57,7 +61,25 @@ document.addEventListener('DOMContentLoaded', function(){
 btnLimpar.addEventListener('click', limparTudo);
 
 function limparTudo(){
+    containerSaldoCarrinho.innerHTML = `<p class="subtotal">Subtotal</p>`
+    valoresDoCarrinho = 0;
     conteinerCarrinho.innerHTML = "";
     localStorage.clear()
 }
 
+//funcoes que vao criar o calculo de soma no carrinho de compra e mostrar na tela
+
+let valoresDoCarrinho = parseFloat(localStorage.getItem('')) || 0;
+
+function  somarValorDoCarrinhoShow(valorDoIngresso){
+    valoresDoCarrinho += valorDoIngresso
+    localStorage.setItem("valores", valoresDoCarrinho)
+    mostrarSomaShows();
+}
+
+function mostrarSomaShows(){
+    containerSaldoCarrinho.innerHTML = `
+    <h4 class="saldoFinal">R$${valoresDoCarrinho}</h4>
+    <p class="subtotal">Subtotal</p>
+    `
+}
